@@ -43,6 +43,7 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
+        cursor: pointer; /* 加鼠标手型 */
     }
 
     .ellipse-container {
@@ -93,9 +94,11 @@
     <h1 class="main-title">人工智能教育资源</h1>
 
     <div class="box-container">
-        <div class="rect-module" style="background:#4a90e2">
+        <!-- 人工智能：添加了 id="aiBtn" 用于点击跳转 -->
+        <div id="aiBtn" class="rect-module" style="background:#4a90e2">
             <div class="text-wrap"><div class="txt">人工智能</div><div class="txt-reflect">人工智能</div></div>
         </div>
+
         <div class="rect-module" style="background:#50c184">
             <div class="text-wrap"><div class="txt">机器人</div><div class="txt-reflect">机器人</div></div>
         </div>
@@ -129,11 +132,17 @@
     </div>
 
 <script>
+// 图形化编程
 document.getElementById('scratchBtn').onclick = function(){
     window.open('http://lite.comecode.net/scratch/edit','_blank');
 };
+// Python编程
 document.getElementById('pythonBtn').onclick = function(){
     window.open('python-editor.html','_blank');
+};
+// 新增：人工智能 跳转百度网盘
+document.getElementById('aiBtn').onclick = function(){
+    window.open('https://pan.baidu.com/s/1tOjYQBnjiMhtFl78NH6VSA?pwd=53d1','_blank');
 };
 </script>
 </body>
