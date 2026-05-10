@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器人资料PDF</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Microsoft YaHei";
+        }
+        body{
+            background:#f9f9f9;
+            padding:30px;
+            text-align:center;
+        }
+        .title{
+            font-size:30px;
+            color:#ff7a2f;
+            margin-bottom:30px;
+        }
+        .pdf-container{
+            display:flex;
+            flex-direction:column;
+            gap:40px;
+            align-items:center;
+        }
+        .pdf-box{
+            width:90%;
+            max-width:1000px;
+        }
+        .pdf-box h2{
+            margin-bottom:10px;
+            color:#333;
+        }
+        embed{
+            width:100%;
+            height:700px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">机器人模块资料（PDF）</h1>
+    <div class="pdf-container">
+        <div class="pdf-box">
+            <h2>1. AI视觉模块</h2>
+            <embed src="image/AI视觉模块.pdf" type="application/pdf">
+        </div>
+        <div class="pdf-box">
+            <h2>2. 轮式机器人主控</h2>
+            <embed src="image/轮式机器人主控.pdf" type="application/pdf">
+        </div>
+    </div>
+</body>
+</html>
